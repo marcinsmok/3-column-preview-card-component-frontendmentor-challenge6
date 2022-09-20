@@ -25,7 +25,7 @@ body {
 }
 main {
   display: flex;
-  width: 70rem;
+  width: 80rem;
 }
 
 .suvs,
@@ -50,6 +50,19 @@ main {
 .luxury {
   background-color: var(--VeryDarkCyan);
 }
+
+h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+}
+button {
+  padding: 1rem;
+  border-radius: 1.5rem;
+  width: 50%;
+  border-style: none;
+  background-color: var(--TransparentWhiteParagraphs);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
