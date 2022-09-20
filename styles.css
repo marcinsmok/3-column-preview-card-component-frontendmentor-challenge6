@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+/* font-family: 'Lexend Deca', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --BrightOrange: hsl(31, 77%, 52%);
+  --DarkCyan: hsl(184, 100%, 22%);
+  --VeryDarkCyan: hsl(179, 100%, 13%);
+  --TransparentWhiteParagraphs: hsla(0, 0%, 100%, 0.75);
+  --VeryLightGrayBgHeadingsButtons: hsl(0, 0%, 95%);
+  font-size: 10px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  font-family: "Lexend Deca", sans-serif;
+  color: var(--TransparentWhiteParagraphs);
+}
+main {
+  display: flex;
+  width: 70rem;
+}
+
+.suvs,
+.sedans,
+.luxury {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.5rem;
+  gap: 3rem;
+  padding: 2rem;
+}
+
+.sedans {
+  background-color: var(--BrightOrange);
+}
+
+.suvs {
+  background-color: var(--DarkCyan);
+}
+
+.luxury {
+  background-color: var(--VeryDarkCyan);
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
