@@ -26,21 +26,24 @@ body {
 main {
   display: flex;
   width: 80rem;
+  border-radius: 1.5rem;
 }
 
 .suvs,
 .sedans,
 .luxury {
   display: flex;
+  flex: 1;
   flex-direction: column;
   justify-content: center;
   font-size: 1.5rem;
   gap: 3rem;
-  padding: 2rem;
+  padding: 5rem 3rem;
 }
 
 .sedans {
   background-color: var(--BrightOrange);
+  border-radius: 1.5rem 0 0 1.5rem;
 }
 
 .suvs {
@@ -49,11 +52,16 @@ main {
 
 .luxury {
   background-color: var(--VeryDarkCyan);
+  border-radius: 0 1.5rem 1.5rem 0;
 }
 
 h1 {
   text-transform: uppercase;
   font-weight: 400;
+}
+
+p {
+  padding-bottom: 4rem;
 }
 button {
   padding: 1rem;
@@ -62,7 +70,21 @@ button {
   border-style: none;
   background-color: var(--TransparentWhiteParagraphs);
 }
+.sedans button {
+  color: var(--BrightOrange);
+}
 
+.suvs button {
+  color: var(--DarkCyan);
+}
+
+.luxury button {
+  color: var(--VeryDarkCyan);
+}
+
+footer {
+  bottom: 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -70,4 +92,24 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 800px) {
+  body {
+    padding-top: 5rem;
+  }
+
+  main {
+    flex-direction: column;
+    width: 90vw;
+    min-height: 80vh;
+  }
+
+  .sedans {
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+  .luxury {
+    background-color: var(--VeryDarkCyan);
+    border-radius: 0 0 1.5rem 1.5rem;
+  }
 }
