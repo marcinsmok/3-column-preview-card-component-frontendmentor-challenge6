@@ -60,6 +60,7 @@ h1 {
   font-weight: 400;
   font-family: "Big Shoulders Display", cursive;
   font-size: 3rem;
+  color: var(--VeryLightGrayBgHeadingsButtons);
 }
 
 p {
@@ -69,8 +70,8 @@ button {
   padding: 1rem;
   border-radius: 1.5rem;
   width: 50%;
-  border: 0.1rem solid var(--TransparentWhiteParagraphs);
-  background-color: var(--TransparentWhiteParagraphs);
+  border: 0.1rem solid var(--VeryLightGrayBgHeadingsButtons);
+  background-color: var(--VeryLightGrayBgHeadingsButtons);
 }
 
 .sedans button {
