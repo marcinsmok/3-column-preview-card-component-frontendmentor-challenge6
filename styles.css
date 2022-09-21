@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
 /* font-family: 'Lexend Deca', sans-serif; */
-
+/*font-family: 'Big Shoulders Display', cursive;*/
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +58,8 @@ main {
 h1 {
   text-transform: uppercase;
   font-weight: 400;
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 3rem;
 }
 
 p {
@@ -67,9 +69,10 @@ button {
   padding: 1rem;
   border-radius: 1.5rem;
   width: 50%;
-  border-style: none;
+  border: 0.1rem solid var(--TransparentWhiteParagraphs);
   background-color: var(--TransparentWhiteParagraphs);
 }
+
 .sedans button {
   color: var(--BrightOrange);
 }
@@ -82,6 +85,12 @@ button {
   color: var(--VeryDarkCyan);
 }
 
+button:hover {
+  color: white;
+  background-color: transparent;
+  border: 0.1rem solid var(--VeryLightGrayBgHeadingsButtons);
+  cursor: pointer;
+}
 footer {
   bottom: 0;
 }
